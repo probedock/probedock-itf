@@ -15,7 +15,7 @@
 ```
 
 2. Extends `ProbeDockAbstractTestResource` in your web test project. You should replace the class which implements the
-`AbstractTestResource` from ITF itself. In fact, you can simply change the `extends`.
+`AbstractDefaultTestResource` from ITF itself. In fact, you can simply change the `extends`.
 
 ```java
 @Resource
