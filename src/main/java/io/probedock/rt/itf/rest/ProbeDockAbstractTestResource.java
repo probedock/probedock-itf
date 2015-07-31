@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Expose the method to start the integration tests
  *
- * @author Laurent Prévost, laurent.prevost@lotaris.com
+ * @author Laurent Prevost <laurent.prevost@probedock.io>
  */
 public abstract class ProbeDockAbstractTestResource {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProbeDockAbstractTestResource.class);

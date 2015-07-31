@@ -15,13 +15,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Shared code to handle the test results in different ROX related listeners
+ * Shared code to handle the test results in different related listeners
  *
  * @author Laurent Prevost <laurent.prevost@probedock.io>
  */
 public abstract class AbstractItfListener extends DefaultListener {
     /**
-     * Rox configuration
+     * Configuration
      */
     protected static final Configuration configuration = Configuration.getInstance();
 

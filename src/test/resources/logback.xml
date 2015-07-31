@@ -11,7 +11,7 @@
     </encoder>
   </appender>
 
-	<logger name="com.lotaris" level="DEBUG" />
+	<logger name="io.probedock.jee.itf" level="DEBUG" />
 	<logger name="com.sun.jersey" level="WARN" />
 	<logger name="org.apache" level="WARN" />
 

@@ -75,7 +75,7 @@ public class ItfListener extends AbstractItfListener {
     public void testRunEnd() {
         super.testRunEnd();
 
-        // Ensure there is nothing to do when ROX is disabled
+        // Ensure there is nothing to do when disabled
         if (configuration.isDisabled()) {
             return;
         }
@@ -98,7 +98,7 @@ public class ItfListener extends AbstractItfListener {
     public void testEnd(Description description) {
         super.testEnd(description);
 
-        // Ensure there is nothing to do when ROX is disabled
+        // Ensure there is nothing to do when disabled
         if (configuration.isDisabled()) {
             return;
         }

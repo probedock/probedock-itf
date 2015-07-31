@@ -35,7 +35,7 @@ public class ItfFilterTest {
     }
 
     /**
-     * This method is never run. It is used only to create the description object to test the rox Filter that allows to
+     * This method is never run. It is used only to create the description object to test the Filter that allows to
      * run test by key, tag, ticket or name.
      */
     @ProbeTest(key = "dummyKey", tags = "dummyTag", tickets = "dummyTicket")

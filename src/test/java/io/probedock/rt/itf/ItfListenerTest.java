@@ -57,7 +57,7 @@ public class ItfListenerTest {
     }
 
     /**
-     * This method is never run. It is used only to create the description object to test the rox Filter that allows to
+     * This method is never run. It is used only to create the description object to test the Filter that allows to
      * run test by key, tag, ticket or name.
      */
     @ProbeTest(key = "dummyKey", tags = "dummyTag", tickets = "dummyTicket")
@@ -67,7 +67,7 @@ public class ItfListenerTest {
     }
 
     /**
-     * This method is never run. It is used only to create the description object to test the rox Filter that allows to
+     * This method is never run. It is used only to create the description object to test the Filter that allows to
      * run test by key, tag, ticket or name.
      */
     @io.probedock.jee.itf.annotations.Test
@@ -77,7 +77,7 @@ public class ItfListenerTest {
 
     @Test
     @ProbeTest(key = "6eb18c16a7ce")
-    public void theRoxTestListenerShouldContainOneResultAfterOneTestNotification() {
+    public void theTestListenerShouldContainOneResultAfterOneTestNotification() {
         Description description = null;
 
         try {
