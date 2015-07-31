@@ -49,7 +49,7 @@ public class TestRestApplication extends Application {
     "type": "key",
     "text": "agas"
   }, {
-    "type: "tag",
+    "type": "tag",
     "text": "feature-a"
   }],
   "category": "integration",
