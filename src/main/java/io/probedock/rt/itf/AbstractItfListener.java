@@ -1,4 +1,4 @@
-package io.probedock.jee.itf;
+package io.probedock.rt.itf;
 
 import io.probedock.client.common.utils.TestResultDataUtils;
 import io.probedock.jee.itf.annotations.NoRollback;

@@ -1,4 +1,4 @@
-package io.probedock.jee.itf;
+package io.probedock.rt.itf;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -14,10 +14,14 @@
 </dependenc>
 ```
 
+**Remark**: For the ITF setup, go to the [readme](https://github.com/probedock/jee-itf) of the project.
+
 2. Extends `ProbeDockAbstractTestResource` in your web test project. You should replace the class which implements the
 `AbstractDefaultTestResource` from ITF itself. In fact, you can simply change the `extends`.
 
 ```java
+import io.probedock.rt.itf.rest.ProbeDockAbstractTestResource;
+
 @Resource
 public class TestEndPoint extends ProbeDockAbstractTestResource {
   @EJB
@@ -41,7 +45,8 @@ public class TestRestApplication extends Application {
 
 4. Deploy your application.
 
-5. To start the tests, you need to do `POST` request with the following content in the body:
+5. To start the tests, you need to do `POST` request with the following content in the body. In fact, you have the full
+control of the path where the resource is exposed.
 
 ```json
 {

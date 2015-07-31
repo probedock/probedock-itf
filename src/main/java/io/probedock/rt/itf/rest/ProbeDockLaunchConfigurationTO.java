@@ -1,4 +1,6 @@
-package io.probedock.jee.itf.rest;
+package io.probedock.rt.itf.rest;
+
+import io.probedock.jee.itf.rest.LaunchConfigurationTO;
 
 public class ProbeDockLaunchConfigurationTO extends LaunchConfigurationTO {
     private String category;

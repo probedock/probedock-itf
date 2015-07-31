@@ -1,11 +1,11 @@
-package io.probedock.jee.itf.rest;
+package io.probedock.rt.itf.rest;
 
 import io.probedock.client.common.config.Configuration;
 import io.probedock.jee.itf.TestController;
 import io.probedock.jee.itf.filters.DefaultFilter;
 import io.probedock.jee.itf.filters.Filter;
 import io.probedock.jee.itf.listeners.Listener;
-import io.probedock.jee.itf.ItfListener;
+import io.probedock.rt.itf.ItfListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +17,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import io.probedock.jee.itf.rest.FilterDefinitionTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
