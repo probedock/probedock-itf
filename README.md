@@ -1,6 +1,6 @@
 # probedock-itf
 
-> [Java EE Integration Test Framework](https://github.com/probedock/jee-itf) client for [Probe Dock](https://github.com/probedock/probedock.
+> [Java EE Integration Test Framework](https://github.com/probedock/jee-itf) client for [Probe Dock](https://github.com/probedock/probedock).
 
 ## Usage
 
