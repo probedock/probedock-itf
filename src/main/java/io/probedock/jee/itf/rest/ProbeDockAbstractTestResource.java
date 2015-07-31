@@ -28,6 +28,8 @@ import org.slf4j.LoggerFactory;
 public abstract class ProbeDockAbstractTestResource {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProbeDockAbstractTestResource.class);
 
+    protected static final String DEFAULT_CATEGORY = "integration";
+
     /**
      * Start the test through the integration test controller
      *
@@ -54,7 +56,7 @@ public abstract class ProbeDockAbstractTestResource {
         if (configuration.hasCategory()) {
             defaultListener = new ItfListener(configuration.getCategory());
         } else {
-            defaultListener = new ItfListener();
+            defaultListener = new ItfListener(DEFAULT_CATEGORY);
         }
 
         // Add more filters
@@ -67,7 +69,7 @@ public abstract class ProbeDockAbstractTestResource {
         listeners.put("listener", defaultListener);
 
         // Add more listeners
-        for (Entry<String, Listener> listener : getAdditionalListeners(configuration.getCategory(), configuration.getProjectApiId()).entrySet()) {
+        for (Entry<String, Listener> listener : getAdditionalListeners(configuration.hasCategory() ? configuration.getCategory() : DEFAULT_CATEGORY, configuration.getProjectApiId()).entrySet()) {
             listeners.put(listener.getKey(), listener.getValue());
         }
 
