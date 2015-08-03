@@ -34,14 +34,8 @@
   }
   ```
 
-3. Make sure the resource is exposed as standard REST resource. If you use annotations, you can follow the next example:
-
-  ```java
-  @Application
-  public class TestRestApplication extends Application {
-  
-  }
-  ```
+3. Make sure the resource is exposed as standard REST resource. If you use annotations, you can follow the next example 
+present in the [demo project](https://github.com/probedock/probedock-demo-itf/blob/master/probedock-demo-itf-test-war/src/main/java/io/probedock/demo/itf)
 
 4. Deploy your application.
 
@@ -57,9 +51,7 @@ control of the path where the resource is exposed.
       "type": "tag",
       "text": "feature-a"
     }],
-    "category": "integration",
-    "seed": 123456,
-    "projectApiId": "aafdycgkgas"
+    "seed": 123456
   }
   ```
 
