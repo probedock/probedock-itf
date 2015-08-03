@@ -20,7 +20,7 @@
 `AbstractDefaultTestResource` from ITF itself. In fact, you can simply change the `extends`.
 
   ```java
-  import ProbeDockAbstractTestResource;
+  import io.probedock.client.itf.ProbeDockAbstractTestResource;
   
   @Resource
   public class TestEndPoint extends ProbeDockAbstractTestResource {

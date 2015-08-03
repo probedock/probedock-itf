@@ -1,10 +1,9 @@
-package io.probedock.itf;
+package io.probedock.client.itf;
 
 import io.probedock.client.common.config.Configuration;
 import io.probedock.client.core.filters.FilterDefinition;
 import io.probedock.client.core.filters.FilterDefinitionImpl;
 import io.probedock.jee.itf.TestController;
-import io.probedock.jee.itf.filters.DefaultFilter;
 import io.probedock.jee.itf.filters.Filter;
 import io.probedock.jee.itf.listeners.Listener;
 

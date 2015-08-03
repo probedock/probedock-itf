@@ -1,4 +1,4 @@
-package io.probedock.itf;
+package io.probedock.client.itf;
 
 import io.probedock.client.core.filters.FilterDefinition;
 import io.probedock.client.core.filters.FilterUtils;
