@@ -1,4 +1,4 @@
-package io.probedock.rt.itf;
+package io.probedock.itf;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

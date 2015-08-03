@@ -1,4 +1,4 @@
-package io.probedock.rt.itf;
+package io.probedock.itf;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -44,10 +44,7 @@ public class ItfListener extends AbstractItfListener {
     private List<TestResult> results = new ArrayList<>();
 
     public ItfListener() {
-    }
-
-    public ItfListener(String category) {
-        super(category);
+        super("Probe Dock ITF Listener");
     }
 
     @Override

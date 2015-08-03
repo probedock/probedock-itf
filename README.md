@@ -20,7 +20,7 @@
 `AbstractDefaultTestResource` from ITF itself. In fact, you can simply change the `extends`.
 
   ```java
-  import io.probedock.rt.itf.rest.ProbeDockAbstractTestResource;
+  import ProbeDockAbstractTestResource;
   
   @Resource
   public class TestEndPoint extends ProbeDockAbstractTestResource {
@@ -67,9 +67,7 @@ control of the path where the resource is exposed.
   
   | Name         | Mandatory | Description |
   | ------------ | --------- | ----------- |
-  | category     | No        | Override the default category. Default category: integration |
   | filters[]    | No        | Define a list of filters to run specific tests. |
-  | projectApiId | Yes       | Probe Dock project identifier to send the result to the server. |
   | seed         | No        | Used to generate the test run order. If not sent, the order is random and the seed will appear in the logs. |
   
   #### Filter object

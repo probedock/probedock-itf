@@ -1,4 +1,4 @@
-package io.probedock.rt.itf;
+package io.probedock.itf;
 
 import io.probedock.client.common.utils.TestResultDataUtils;
 import io.probedock.jee.itf.annotations.NoRollback;
@@ -31,15 +31,11 @@ public abstract class AbstractItfListener extends DefaultListener {
     protected static final String DEFAULT_CATEGORY = "Integration";
 
     /**
-     * Category used only if set and no other specified
+     *
+     * @param listenerName
      */
-    private String category;
-
-    public AbstractItfListener() {
-    }
-
-    public AbstractItfListener(String category) {
-        this.category = category;
+    public AbstractItfListener(String listenerName) {
+        super(listenerName);
     }
 
     /**
@@ -113,7 +109,7 @@ public abstract class AbstractItfListener extends DefaultListener {
      * @return The category
      */
     protected final String getCategory() {
-        return category != null && !category.isEmpty() ? category : DEFAULT_CATEGORY;
+        return configuration.getCategory() != null && !configuration.getCategory().isEmpty() ? configuration.getCategory() : DEFAULT_CATEGORY;
     }
 
 }
