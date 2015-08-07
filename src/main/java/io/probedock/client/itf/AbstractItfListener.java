@@ -55,7 +55,7 @@ public abstract class AbstractItfListener extends DefaultListener {
      * @return The annotation found, or null if not found
      */
     protected ProbeTestClass getClassAnnotation(Description description) {
-        return description.getMethod().getClass().getAnnotation(ProbeTestClass.class);
+        return description.getMethod().getDeclaringClass().getAnnotation(ProbeTestClass.class);
     }
 
     /**

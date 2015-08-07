@@ -115,7 +115,7 @@ public class ItfListenerTest {
         listener.testEnd(description.pass());
 
         assertEquals("The listener does not contain any result where it should", 1, results.size());
-        assertEquals("The data should contains five elements", 5, results.get(0).getData().size());
+        assertEquals("The data should contains five elements", 6, results.get(0).getData().size());
         assertNotNull("The test in the results should contain the custom data", results.get(0).getData().get("test"));
     }
 }
